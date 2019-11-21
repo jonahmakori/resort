@@ -1,33 +1,82 @@
-h1{
-    color: blue;
+body{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(231, 199, 151);
 }
-h1 {
-    color: darkred;
+nav{
+    width: 100%;
+    justify-content: space-evenly;
+    position: fixed;
     text-align: center;
-  }
-  h2 {
-    font-style: italic;
+    top: 0;
+}
+ul>li{
     text-align: center;
-    color: red;
+    display: inline-block;
+}
+.hm{
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
   }
-  p {
-    color: crimson;
-  }
-  body {
-    background-color: salmon;
-  }
-  h1 {
-    color: darkred;
-  }
-  h2 {
-    font-style: italic;
-    color: red;
-  }
-  p {
-    color: crimson;
-  }
-  body {
-    background-color: salmon;
-    font-family: sans-serif;
+  
+  li a {
+    display: block;
+    color: white;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .accommodations{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+  }
+  .active >ol{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+  table {
+    border-spacing: 0.5rem;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  img{
+    width: 400px;
+    height: 500px;
+    border-radius: 40px;
+  }
+  table{
+    justify-content: center;
+    margin-left:;
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    .accommodations{
+      display: flex;
+      flex-direction: column;
+    }
+    .active >ol{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+    img{
+      display: flex;
+      flex-direction: column;
+    }
   }
